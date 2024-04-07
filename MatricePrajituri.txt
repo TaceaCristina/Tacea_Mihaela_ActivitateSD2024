@@ -1,0 +1,7 @@
+Mucenic,17.99,10
+Amandina,35,9.5
+Mousse cioco, 71,9.9
+Tarta de fructe,45,7.7
+Tort fistic,69.99,8.9
+Ecler,30,8.6
+Branzoaica,17.99,8.3

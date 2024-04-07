@@ -27,5 +27,32 @@
     <ClCompile Include="Task 2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Seminar 3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task 3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar 5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task 4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task 5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar 6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar 7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

@@ -88,7 +88,7 @@
 //	c->nume = NULL;
 //}
 //
-////////////VECTOR
+////////////////VECTOR////////////////
 //
 ////functie care va creea un nou vector în care va copia dintr-un vector primit 
 ////ca parametru obiectele care indeplinesc o anumita conditie
@@ -155,6 +155,39 @@
 //	return conc;
 //}
 //
+///////////////////FISIERE////////////////////
+////Scrieti o functie care va salva un obiect  intr-un fisier text.
+//void scriereTXT(Carte c, FILE* f, int* nr)
+//{
+//	fprintf(f, "%s\n", c.nume);
+//	fprintf(f, "%d\n", c.anPublicare);
+//	fprintf(f, "%.2f\n", c.pretMediu);
+//	fprintf(f, "%ld\n", c.nrTotalExemplare);
+//	fprintf(f, "\n");
+//	++(*nr);
+//}
+//
+////Scrieti o functie care va salva un vector de obiecte intr-un fisier text.
+//void citireTXT(Carte* c, char* numefis, int dim)
+//{
+//	FILE* f = fopen(numefis, "r");
+//	if (!f)printf("Nu merge fisierul");
+//	else
+//	{
+//		for (int i = 0;i < dim;i++)
+//		{
+//			c[i].nume = (char*)malloc(100 * sizeof(char));
+//			fscanf(f, "%[^\n]", c[i].nume);
+//			fscanf(f, "%d", &c[i].anPublicare);
+//			fscanf(f, "%f", &c[i].pretMediu);
+//			fscanf(f, "%ld", &c[i].nrTotalExemplare);
+//
+//			fgetc(f);//pentru \n
+//		}
+//	}
+//	fclose(f);
+//}
+//
 //
 //void main()
 //{
@@ -175,52 +208,52 @@
 //	Carte c5 = initializareCarte("Eu nu strivesc corola de minuni", 2002, 80, 280);
 //	afisare(&c5);
 //
-//	printf("////////////////VECTOR////////////////");
+//	//printf("////////////////VECTOR////////////////");
 //
-//	int dimensV = 0;
-//	Carte* vector = (Carte*)malloc(dimensV * sizeof(Carte));
+//	//int dimensV = 0;
+//	//Carte* vector = (Carte*)malloc(dimensV * sizeof(Carte));
 //
-//	adaugareCarteVector(&vector, &dimensV, &c1);
-//	adaugareCarteVector(&vector, &dimensV, &c2);
-//	adaugareCarteVector(&vector, &dimensV, &c3);
-//	adaugareCarteVector(&vector, dimensV, &c4);
-//	adaugareCarteVector(&vector, &dimensV, &c5);
+//	//adaugareCarteVector(&vector, &dimensV, &c1);
+//	//adaugareCarteVector(&vector, &dimensV, &c2);
+//	//adaugareCarteVector(&vector, &dimensV, &c3);
+//	//adaugareCarteVector(&vector, dimensV, &c4);
+//	//adaugareCarteVector(&vector, &dimensV, &c5);
 //
-//	afisareCarteVector(vector, dimensV);
+//	//afisareCarteVector(vector, dimensV);
 //
-//	printf("DIMENSUNE VECTOR: %d\n", dimensV);
+//	//printf("DIMENSUNE VECTOR: %d\n", dimensV);
 //
 //
-//	int dimensV2 = 0;
-//	Carte* vector2 = copiereVector(vector, dimensV, 10, &dimensV2);
-//	printf("DIMENSIUNE VECTOR 2: %d\n", dimensV2);
-//	printf(vector2, dimensV2);
+//	//int dimensV2 = 0;
+//	//Carte* vector2 = copiereVector(vector, dimensV, 10, &dimensV2);
+//	//printf("DIMENSIUNE VECTOR 2: %d\n", dimensV2);
+//	//printf(vector2, dimensV2);
 //
-//	int dimensV3 = 0;
-//	Carte* vector3 = (Carte*)malloc(dimensV3 * sizeof(Carte));
-//	adaugareCarteVector(&vector3, &dimensV3, &c4);
-//	adaugareCarteVector(&vector3, dimensV3, &c5);
-//	printf("\n\n");
-//	afisareCarteVector(vector3, dimensV3);
+//	//int dimensV3 = 0;
+//	//Carte* vector3 = (Carte*)malloc(dimensV3 * sizeof(Carte));
+//	//adaugareCarteVector(&vector3, &dimensV3, &c4);
+//	//adaugareCarteVector(&vector3, dimensV3, &c5);
+//	//printf("\n\n");
+//	//afisareCarteVector(vector3, dimensV3);
 //
-//	int dimensVC;
-//	Carte* vectorC = concatenareVector(vector2, vector3, dimensV2, dimensV3, &dimensVC);
-//	printf("DIMENSIUNE VECTOR CONCATENAT: %d\n", dimensVC);
-//	afisareCarteVector(vectorC, dimensVC);
+//	//int dimensVC;
+//	//Carte* vectorC = concatenareVector(vector2, vector3, dimensV2, dimensV3, &dimensVC);
+//	//printf("DIMENSIUNE VECTOR CONCATENAT: %d\n", dimensVC);
+//	//afisareCarteVector(vectorC, dimensVC);
 //
 //
 //	free(c1.nume);
 //	c1.nume = NULL;
-//	
+//
 //	dezalocare(&c2);
 //	dezalocare(&c3);
 //
-//	free(vector);
-//	vector = NULL;
-//	free(vector2);
-//	vector2 = NULL;
-//	free(vector3);
-//	vector3 = NULL;
-//	free(vectorC);
-//	vectorC = NULL;
+//	//free(vector);
+//	//vector = NULL;
+//	//free(vector2);
+//	//vector2 = NULL;
+//	//free(vector3);
+//	//vector3 = NULL;
+//	//free(vectorC);
+//	//vectorC = NULL;
 //}
