@@ -71,17 +71,14 @@
 //	return vectorAeroporturi;
 //}
 //
-////void dezalocareVector(struct Aeroport** aeroporturi, int *dim)
-////{
-////	for (int i = 0; i < (*dim); i++)
-////	{
-////		free((*aeroporturi)[i].nume);
-////		free(aeroporturi[i]);
-////	}
-////	free(*aeroporturi);
-////	(*aeroporturi) = NULL;
-////	(*dim) = 0;
-////}
+//void dezalocareVector(struct Aeroport** aeroporturi, int* dim) {
+//	for (int i = 0; i < (*dim); i++) {
+//		free((*aeroporturi)[i].nume);
+//	}
+//	free(*aeroporturi);
+//	(*aeroporturi) = NULL;
+//	(*dim) = 0;
+//}
 //
 //void afisareAeroport(struct Aeroport* aeroport)
 //{
@@ -106,5 +103,5 @@
 //	struct Aeroport* aeroporturi = NULL;//initializam cu NULL pt ca nu avem niciun aeroport
 //	aeroporturi = citireFisier("aeroporturi.txt", &dimensiune);//ca eu sa l folosesc ca pointer, extrag adresa
 //	afisareVectorAeroporturi(aeroporturi, dimensiune);
-//	//dezalocareVector(&aeroporturi, &dimensiune);
+//	dezalocareVector(&aeroporturi, &dimensiune);
 //}

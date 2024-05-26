@@ -38,12 +38,14 @@
 //	return b;
 //}
 //
-////fct care insereaza o binlioteca la inceputul listei dublu inlantuite
+////fct care insereaza o biblioteca la inceputul listei dublu inlantuite
 //void inserareInceput(ListaDubla* listaDubla, Biblioteca b) 
 //{
 //	Nod* nod = (Nod*)malloc(sizeof(Nod));
-//	//facem shallow copy
+//	//shallow copy
 //	nod->info = b;
+//	//deep copy
+//	//nod->info = initializare(b.nume,b.nrCarti,b.nrCititori);
 //	nod->next = listaDubla->head;
 //	nod->prev = NULL;
 //	if (listaDubla->head)
@@ -81,28 +83,29 @@
 //	}
 //	if (aux)
 //	{
-//		if (aux == listaDubla->head)
+//		if (aux == listaDubla->head)//stergerea nodului de la inceputul listei
 //		{
-//			if (aux == listaDubla->tail)
-//			{
+//			if (aux == listaDubla->tail)//daca aux e si capul si coada listei
+//			{//actualizam head si tail la NULL
 //				listaDubla->head = NULL;
 //				listaDubla->tail = NULL;
 //			}
-//			else
-//			{
+//			else//daca aux este doar capul listei
+//			{//actualizam head la urm nod
 //				listaDubla->head = listaDubla->head->next;
+//			//actualizam prev ul noului cap la NULL
 //				listaDubla->head->prev = NULL;
 //			}
 //		}
-//		else
+//		else//stergerea nodului din interiorul sau de la sfarsitul listei
 //		{
 //			if (aux == listaDubla->tail)
-//			{
-//				aux->prev->next = NULL;//modif ultimul nod
+//			{//stergerea nodului de la starsitul listei
+//				aux->prev->next = NULL;
 //				listaDubla->tail = aux->prev;
 //			}
 //			else
-//			{
+//			{//stergerea nodului din interiorul listei
 //				aux->next->prev = aux->prev;
 //				aux->prev->next = aux->next;
 //			}

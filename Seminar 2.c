@@ -22,9 +22,9 @@
 //	return c;
 //}
 //
-//void afisareCalculator(struct Calculator c)
+//void afisareCalculator(struct Calculator *c)
 //{
-//	printf("Calculatorul cu seria %s, costa %5.2f si are %d porturi\n", c.serie, c.pret, c.nrPorturi);
+//	printf("Calculatorul cu seria %s, costa %5.2f si are %d porturi\n", c->serie, c->pret, c->nrPorturi);
 //}
 //
 //void afisareVectorCalculatoare(struct Calculator* vector, int nrcalculatoare)
@@ -33,17 +33,17 @@
 //	{
 //		for (int i = 0; i < nrcalculatoare; i++)
 //		{
-//			afisareCalculator(vector[i]);
+//			afisareCalculator(&vector[i]);
 //		}
 //	}
 //}
 //
-////fct care sa ne copieze primele n elemente
-//struct Calculator* copiazaNCalculatoare(struct Calculator* calculatoare, int nrcalculatoare, int nrcalculatoareCopiate)
+////fct care sa ne copieze primele n elemente intr un vector
+//struct Calculator* copiazaNCalculatoare(struct Calculator* calculatoare, int nrcalculatoareCopiate)
 //{
 //	//initializ un vector de calculatoare
 //	struct Calculator* copiate = (struct Calculator*)malloc(sizeof(struct Calculator) * nrcalculatoareCopiate);
-//	//SHALLOW COPY=atribuire de adrese                     deep copy
+//	//SHALLOW COPY=atribuire de adrese                     
 //	for (int i = 0; i < nrcalculatoareCopiate; i++)
 //	{
 //		copiate[i] = calculatoare[i];

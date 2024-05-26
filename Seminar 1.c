@@ -2,7 +2,7 @@
 //#include<stdio.h>
 //#include<malloc.h>
 //
-////STRUCTURA: tip de date pt articole pe care le creeam(in interiorul structurii avem caracteristici)
+////STRUCTURA: tip de date pt articole pe care le cream(in interiorul structurii avem caracteristici)
 ////in C nu avem metode in interiorul structurilor 
 //
 //struct Masina

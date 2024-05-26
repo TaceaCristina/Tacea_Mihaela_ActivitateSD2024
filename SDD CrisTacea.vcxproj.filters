@@ -51,6 +51,12 @@
     <ClCompile Include="Seminar 7.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Seminar 8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar 9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
