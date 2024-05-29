@@ -129,6 +129,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Seminar 1.c" />
+    <ClCompile Include="Seminar 11.c" />
+    <ClCompile Include="Seminar 12.c" />
+    <ClCompile Include="Seminar 13.c" />
     <ClCompile Include="Seminar 2.c" />
     <ClCompile Include="Seminar 3.c" />
     <ClCompile Include="Seminar 5.c" />
